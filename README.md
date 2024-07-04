@@ -17,4 +17,4 @@ It also helps that I use virtual servers for more robust endeavors; [nimbus](htt
 
 ## docker
 
-Dockerfiles are intentionally separated out into separate directories within [cumulus-services](cumulus-services) to keep things clean, modular, & scalable.
+Dockerfiles are intentionally separated out into separate directories within [cumulus-services](cumulus-services) to keep things clean, modular, & scalable. I'm using Docker volumes rather than bind mounts for better performance, persistence, and because it's just easier.
