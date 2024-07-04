@@ -13,6 +13,7 @@ It also helps that I use virtual servers for more robust endeavors; [nimbus](htt
 
 ## current services
 
+- Homepage
 - Jellyfin
 
 ## docker
