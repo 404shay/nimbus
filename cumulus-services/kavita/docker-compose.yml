@@ -1,0 +1,14 @@
+services:
+    kavita:
+        image: jvmilazz0/kavita:latest    # Using the stable branch from the official dockerhub repo.
+        container_name: kavita
+        volumes:
+            - /media/shay/e78a127c-1e03-4947-a36e-cd4776ccbc5a/comics:/comics          # Use as many as you want
+            - /media/shay/e78a127c-1e03-4947-a36e-cd4776ccbc5a/books:/books            #
+            - ./data:/kavita/config     # Change './data if you want to have the config files in a different place.
+                                        # /kavita/config must not be changed
+        environment:
+            - TZ=America/New_York
+        ports:
+            - "5000:5000" # Change the public port (the first 5000) if you have conflicts with other services
+        restart: unless-stopped
