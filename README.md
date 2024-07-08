@@ -15,9 +15,9 @@ It also helps that I use virtual servers for more robust endeavors; [nimbus](htt
 
 - Homepage
 - Jellyfin
+- Kavita
+- Home Assistant
 
 ## docker
 
 Dockerfiles are intentionally separated out into separate directories within [cumulus-services](cumulus-services) to keep things clean, modular, & scalable. 
-
-Where possible, I'm using Docker volumes rather than bind mounts for better performance, persistence, and because it's just easier.
