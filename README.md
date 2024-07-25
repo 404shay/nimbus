@@ -8,7 +8,7 @@ Nimbus uses a dedicated Raspberry Pi 4 (Model B, 8gb) to manage digital media an
 
 I had an extra one laying around, so it was basically free. That's how money works, right?
 
-I've added a mechanical hard drive to offload write operations and decrease wear & tear on the SD card that serves as the Pi's primary storage. It's encased in aluminum with a pretty strong fan, so noise and heat are minimal. Power consumption is minimal.
+I've added a mechanical hard drive to offload write operations and decrease wear & tear on the SD card that serves as the Pi's primary storage. It's encased in aluminum with a pretty strong fan, so noise and heat aren't an issue. Power consumption is minimal.
 
 For now, the Raspberry Pi is suitable for my household needs and it's weirdly fun to work within the constraints of a single-board computer. I'm certainly keeping an eye on Mini PC deals and eBay listings, though. 
 
