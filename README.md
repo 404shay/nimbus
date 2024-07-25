@@ -14,12 +14,12 @@ For now, the Raspberry Pi is suitable for my household needs and it's weirdly fu
 
 ## Current Services
 
-# Household
+### Household
 
 - Homepage
 - Home Assistant
 
-# Media
+### Media
 
 - Jellyfin
 - Kavita
