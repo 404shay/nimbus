@@ -54,6 +54,7 @@ For now, the Raspberry Pi is suitable for my household needs and it's weirdly fu
 - [Umami](https://eu.umami.is/share/LGazGOecbDtaIwDr/umami.is)
 - [Mailcow](https://docs.mailcow.email/getstarted/install/)
 - [Super Productivity](https://github.com/johannesjo/super-productivity)
+- [OpenVAS](https://github.com/greenbone/openvas-scanner)
   
 
 ### On hold
