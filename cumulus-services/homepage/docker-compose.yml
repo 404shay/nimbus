@@ -1,21 +1,15 @@
-version: "3.3"
 services:
   homepage:
-    image: ghcr.io/gethomepage/homepage:v0.9.2 # Specifying latest version because it wasn't pulling consistently
+    image: ghcr.io/gethomepage/homepage:v0.9.5 # Specifying latest version because it wasn't pulling consistently
     container_name: homepage
     environment:
-      PUID: 1000  # Pi UID
-      PGID: 1000  # Pi GID
+      - PUID=${PUID}
+      - PGID=${PGID}
+      - HOMEPAGE_VAR_GCAL=${HOMEPAGE_VAR_GCAL}
     ports:
       - "3000:3000"
     volumes:
-      - homepage_config:/app/config
-      - type: bind
-        source: /nimbus/img
-        target: /app/public/images
-        read_only: true
+      - /nimbus/config/homepage:/app/config
+      - /var/run/docker.sock:/var/run/docker.sock:ro # optional, for docker integrations
     restart: unless-stopped
-
-volumes:
-  homepage_config:
-    driver: local
+    env_file: ".env"
